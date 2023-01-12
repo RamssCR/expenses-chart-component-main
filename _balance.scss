@@ -1,0 +1,22 @@
+@use 'vars' as vars;
+
+.balance{
+    background-color: vars.$softRed;
+    border-radius: 0.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: vars.$paleOrange;
+    padding: 1em;
+
+    .total{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+
+        .value{
+            font-size: vars.$fontSize * 1.6;
+            font-weight: 700;
+        }
+    }
+}

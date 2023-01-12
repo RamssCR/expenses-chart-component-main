@@ -1,0 +1,43 @@
+@use 'vars' as vars;
+@use 'balance' as bal;
+@use 'chart' as chart;
+@use 'analytics' as ans;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: vars.$cream;
+    font-size: vars.$fontSize;
+    font-family: vars.$fontFamily;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 19em;
+}
+
+.attribution{
+    color: vars.$darkBrown;
+    padding: 0.2em;
+    text-align: center;
+
+    a{
+        color: vars.$softRed;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use 'vars' as vars;
+
+.analytics{
+    display: flex;
+
+    .total-month{
+
+
+        .t-text{
+            font-size: 0.9em;
+        }
+
+        .value-d{
+            font-size: 1.78em;
+            font-weight: 700;
+            color: vars.$darkBrown;
+        }
+    }
+
+    .percentage{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        width: 8em;
+        
+
+
+        .t-percent{
+            font-weight: 700;
+            color: vars.$darkBrown;
+        }
+
+        .t-text{
+            font-size: 0.8em;
+        }
+    }
+}

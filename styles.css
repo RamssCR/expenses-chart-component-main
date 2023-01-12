@@ -1,0 +1,139 @@
+.balance {
+  background-color: #ec775f;
+  border-radius: 0.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fffaf5;
+  padding: 1em;
+}
+.balance .total {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.balance .total .value {
+  font-size: 28.8px;
+  font-weight: 700;
+}
+
+.graphics {
+  width: 19em;
+  border-radius: 0.3em;
+  background-color: #fffaf5;
+  padding: 1.3em 1em;
+  color: #93867b;
+}
+.graphics .text {
+  font-size: 1.35em;
+  margin-bottom: 0.5em;
+  color: #382314;
+}
+.graphics .chart-bars {
+  display: flex;
+  justify-content: space-around;
+  height: 12.5em;
+  align-items: flex-end;
+  transition: 500ms all ease;
+}
+.graphics .chart-bars .bar-values {
+  position: relative;
+  width: 32px;
+  background-color: #ec775f;
+  height: 11em;
+  border-radius: 0.2em;
+}
+.graphics .chart-bars .bar-values .label {
+  background-color: #382314;
+  color: #fffaf5;
+  width: fit-content;
+  font-size: 0.6em;
+  padding: 0.3em;
+  border-radius: 0.2em;
+  font-weight: 700;
+  position: absolute;
+  top: -2.5em;
+  left: -2.5px;
+  display: none;
+}
+.graphics .chart-bars .bar-values .day {
+  position: absolute;
+  bottom: -1.3em;
+  font-size: 0.7em;
+  width: 32px;
+  text-align: center;
+}
+.graphics .chart-bars .bar-values:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.line {
+  border-bottom: 1px solid #93867b;
+  margin: 2em 0 1em 0;
+}
+
+.analytics {
+  display: flex;
+}
+.analytics .total-month .t-text {
+  font-size: 0.9em;
+}
+.analytics .total-month .value-d {
+  font-size: 1.78em;
+  font-weight: 700;
+  color: #382314;
+}
+.analytics .percentage {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  width: 8em;
+}
+.analytics .percentage .t-percent {
+  font-weight: 700;
+  color: #382314;
+}
+.analytics .percentage .t-text {
+  font-size: 0.8em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8e9dd;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 19em;
+}
+
+.attribution {
+  color: #382314;
+  padding: 0.2em;
+  text-align: center;
+}
+.attribution a {
+  color: #ec775f;
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */

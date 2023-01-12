@@ -1,0 +1,64 @@
+@use 'vars' as vars;
+
+.graphics{
+    width: 19em;
+    border-radius: 0.3em;
+    background-color: vars.$paleOrange;
+    padding: 1.3em 1em;
+    color: vars.$medBrown;
+    
+    .text{
+        font-size: 1.35em;
+        margin-bottom: 0.5em;
+        color: vars.$darkBrown;
+    }
+    
+    .chart-bars{
+        display: flex;
+        justify-content: space-around;
+        height: 12.5em;
+        align-items: flex-end;
+        transition: 500ms all ease;
+        
+        .bar-values{
+            position: relative;
+            width: 32px;
+            background-color: vars.$softRed;
+            height: 11em;
+            border-radius: 0.2em;
+
+            .label{
+                background-color: vars.$darkBrown;
+                color: vars.$paleOrange;
+                width: fit-content;
+                font-size: 0.6em;
+                padding: 0.3em;
+                border-radius: 0.2em;
+                font-weight: 700;
+                position: absolute;
+                top: -2.5em;
+                left: -2.5px;
+                display: none;
+            }
+
+            .day{
+                position: absolute;
+                bottom: -1.3em;
+                font-size: 0.7em;
+                width: 32px;
+                text-align: center;
+            }
+
+            &:hover{
+                cursor: pointer;
+                filter: brightness(1.2);
+            }
+        }
+    }
+}
+
+.line{
+    border-bottom: 1px solid vars.$medBrown;
+    margin: 2em 0 1em 0;
+}
+
